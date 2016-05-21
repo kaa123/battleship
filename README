@@ -1,0 +1,9 @@
+The game "battleship".
+On the map, there are 10 ships:
+1) One ship with four decks;
+2) Two ships with three decks;
+3)Two ships with three decks;
+4)Four ships with one deck;
+Clicking on the cell card, you need to find the location of all the ships in the minimum number of moves.
+When hit, there is a picture with the ship.
+If it misses, there is a blank background.
