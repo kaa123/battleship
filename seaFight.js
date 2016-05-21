@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var shoots = 0;
 
-	$.getJSON('http://kaa123.github.io/SeaFight/seafight.json', function(positions){
+	$.getJSON('http://kaa123.github.io/battleship/seafight.json', function(positions){
 		var ships=positions.ships;
 		var width = positions.width;
 		var height = positions.height;
