@@ -1,15 +1,14 @@
    body {
-    background-image: url('fon.jpg'); /* Цвет фона и путь к файлу */
-    color: #fff; /* Цвет текста */
+    background-image: url('fon.jpg'); 
    }
    .field{
-			display: inline-block;
-			border: 2px solid #694626;
-			width: 50px;
-			height: 50px;
-			position: absolute;
-			cursor:pointer;
-			background:#CDB287
+		display: inline-block;
+		border: 2px solid #694626;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		cursor:pointer;
+		background:#CDB287
 		}
 
 	.field-dead{
@@ -26,20 +25,20 @@
 	}
 
 	#map{
-		position: absolute; /* Абсолютное позиционирование */
-	     width: 550px; /* Ширина слоя в процентах */
-	     height: 500px; /* Высота слоя в процентах */
-	     left: 300px; /* Положение слоя от левого края */
-	     top: 200px; /* Положение слоя от верхнего края */
+		position: absolute; 
+	    width: 550px; 
+	    height: 500px; 
+	    left: 300px; 
+	    top: 200px; 
 	    
 	}
 
 	#table{
-		position: absolute; /* Абсолютное позиционирование */
-	    width: 550px; /* Ширина слоя в процентах */
-	    height: 550px; /* Высота слоя в процентах */
-	    left: 250px; /* Положение слоя от левого края */
-	    top: 150px; /* Положение слоя от верхнего края */
+		position: absolute; 
+	    width: 550px;
+	    height: 550px;
+	    left: 250px;
+	    top: 150px;
 	    font-family: sans-serif;
 	    font-size: 35px;
 	    font-weight: 520;
@@ -48,16 +47,15 @@
 	
 
 	#content{
-		position: relative; /* Абсолютное позиционирование */
-	    width: 300px; /* Ширина слоя в процентах */
-	    height: 400px; /* Высота слоя в процентах */
-	    left: 1100px; /* Положение слоя от левого края */
-	    top: 100px; /* Положение слоя от верхнего края */
+		position: relative;
+	    width: 300px; 
+	    height: 400px;
+	    left: 1100px;
+	    top: 100px;
 	    font-family: sans-serif;
 	    font-size: 20px;
 	    font-weight: 520;
 	    color: #382515;
 	    text-align: justify;
-	    /*background: #fff;*/
 	}
 	

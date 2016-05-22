@@ -43,15 +43,14 @@ $(document).ready(function() {
 				deadShips.push(target);
 			}
 			if($(this).hasClass('ship-'+ships) ){
-				
 				$(this).removeClass("ship-"+ships);
+
 			}
-			if ($(".ship").hasClass('ship-'+ships)|| $(this).hasClass('field-empty')|| $(this).hasClass('checked')){
+			if ($(".ship").hasClass('ship-'+ships)|| $(this).hasClass('field-empty')){
 			}else{
-				$(this).addClass('checked');
 				alert ("Убит");
 			}
-				
+			$(".field-dead").off('click');
 			$(".field-dead").removeClass("ship");
 
 			if(deadShips.length ==20){
