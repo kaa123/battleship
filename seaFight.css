@@ -21,6 +21,9 @@
 		background-image:url('field-away.jpg');
 		cursor:default;
 	}
+	.cursor{
+		cursor: default;
+	}
 
 	#map{
 		position: absolute; /* Абсолютное позиционирование */

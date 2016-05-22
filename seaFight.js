@@ -19,15 +19,14 @@ $(document).ready(function() {
 		})
 		$.each(ships,function(shipNum, value){
 			$.each(this, function(){
-				$('#field'+this.x+'-'+this.y).addClass('ship').addClass('ship'+'-'+shipNum).data('shipNum',shipNum);
+				$('#field'+this.x+'-'+this.y).addClass('ship').addClass('ship-'+shipNum).data('shipNum',shipNum);
 			})
 		})
 		$(".ship").removeClass("free");
 
 		var deadShips=[];
 		var num = 0;
-		//селектор not
-		//найти все корабли, которые не помечны классом 
+
 		$('.field').on('click',function(){
 			var target = this.id;
 			var ships = parseInt($(this).data('shipNum'));
@@ -35,6 +34,7 @@ $(document).ready(function() {
 			if($(this).hasClass('free')){
 				$(this).addClass('field-empty');
 				shoots = shoots+1;
+				$(this).removeClass('free')
 			}if($(this).hasClass('ship')&&$(this).hasClass('field-dead')){
 				shoots = shoots;
 			}if($(this).hasClass('ship')&& deadShips.indexOf(target)==-1){
@@ -42,18 +42,21 @@ $(document).ready(function() {
 				$(this).addClass('field-dead');
 				deadShips.push(target);
 			}
-			// if($(this).hasClass('ship'+'-'+ships) ){
-			// 	$(this).addClass('checked');
-			// 	if($(".ship-"+ships":not(.checked)")){
-			// 	}else{
-			// 		alert ("Убит");
-			// 	}	
-			// }
-			
+			if($(this).hasClass('ship-'+ships) ){
+				
+				$(this).removeClass("ship-"+ships);
+			}
+			if ($(".ship").hasClass('ship-'+ships)|| $(this).hasClass('field-empty')|| $(this).hasClass('checked')){
+			}else{
+				$(this).addClass('checked');
+				alert ("Убит");
+			}
+				
 			$(".field-dead").removeClass("ship");
 
 			if(deadShips.length ==20){
 				alert("Вы уничтожили все корабли. Количество выстрелов: "+ shoots);
+				$('.field').addClass('cursor');
 				$('.field').off('click');
 			}
 		})
