@@ -1,6 +1,7 @@
-   body {
-    background-image: url('fon.jpg'); 
-   }
+	body {
+		background-image: url('background.jpg'); 
+	}
+
    .field{
 		display: inline-block;
 		border: 2px solid #694626;
@@ -9,7 +10,7 @@
 		position: absolute;
 		cursor:pointer;
 		background:#CDB287
-		}
+	}
 
 	.field-dead{
 		background-image:url('field-hit.jpg');
@@ -20,42 +21,56 @@
 		background-image:url('field-away.jpg');
 		cursor:default;
 	}
+
 	.cursor{
 		cursor: default;
 	}
 
 	#map{
 		position: absolute; 
-	    width: 550px; 
-	    height: 500px; 
-	    left: 300px; 
-	    top: 200px; 
+		width: 550px; 
+		height: 500px; 
+		left: 300px; 
+		top: 200px; 
 	    
 	}
 
 	#table{
 		position: absolute; 
-	    width: 550px;
-	    height: 550px;
-	    left: 250px;
-	    top: 150px;
-	    font-family: sans-serif;
-	    font-size: 35px;
-	    font-weight: 520;
-	    color: #382515;
+		width: 550px;
+		height: 550px;
+		left: 250px;
+		top: 150px;
+		font-family: sans-serif;
+		font-size: 35px;
+		font-weight: 520;
+		color: #382515;
 	}
 	
-
 	#content{
 		position: relative;
-	    width: 300px; 
-	    height: 400px;
-	    left: 1100px;
-	    top: 100px;
-	    font-family: sans-serif;
-	    font-size: 20px;
-	    font-weight: 520;
-	    color: #382515;
-	    text-align: justify;
+		width: 300px; 
+		height: 400px;
+		left: 1100px;
+		top: 100px;
+		font-family: sans-serif;
+		font-size: 20px;
+		font-weight: 520;
+		color: #382515;
+		text-align: justify;
+	}
+
+	.murdered-line{
+		background-image:url('murdered-line.jpg');
 	}
 	
+	td {
+		text-align: center;
+		width: 35px;
+		height: 40px;
+	}
+	
+	table{
+		height: 100%;
+		width: 100%;
+	}

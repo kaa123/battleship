@@ -43,12 +43,13 @@ $(document).ready(function() {
 				deadShips.push(target);
 			}
 			if($(this).hasClass('ship-'+ships) ){
+				$(this).addClass('murdered');
 				$(this).removeClass("ship-"+ships);
 
 			}
-			if ($(".ship").hasClass('ship-'+ships)|| $(this).hasClass('field-empty')){
+			if ($(".ship").hasClass('ship-'+ships)||$(this).hasClass('field-empty')){
 			}else{
-				alert ("Убит");
+				$(".murdered").addClass('murdered-line');
 			}
 			$(".field-dead").off('click');
 			$(".field-dead").removeClass("ship");
